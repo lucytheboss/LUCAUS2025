@@ -4,6 +4,9 @@
 This repository documents the process and artifacts from my work on the CAU school festival website project.  
 My contributions focus on **UX research**, **UI design**, **design-to-development collaboration**, and **analytics strategy planning**.
 
+## 🔗 Link to site : https://lucaus.co.kr
+## 👭 Team Repository : https://github.com/LUCAUS2025
+
 ---
 
 # 🇺🇸 English Version
