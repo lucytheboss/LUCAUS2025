@@ -9,8 +9,6 @@ My contributions focus on **UX research**, **UI design**, **design-to-developmen
 
 ---
 
-# 🇺🇸 English Version
-
 ## 📌 Overview
 This project was a university festival website built collaboratively with a development team.  
 I participated as a **UX/UI designer**, conducting research, redesigning flows and layouts, and supporting the implementation phase with structured design handoffs and visual QA.
@@ -53,216 +51,98 @@ Although I did not contribute to coding, I worked closely with the dev team by:
 - Communicating layout issues, spacing rules, and visual polish needs.
 - Capturing before/after screenshots for reference.
 
-This section includes documentation to demonstrate the collaboration process.
-
 ---
 
-## 📊 Analytics Planning (In Progress)
-I am preparing a follow-up analysis using:
+## 📊 Analytical Works -  Festival Website Log Analysis  
+**Understanding User Engagement and Momentum in a Large-Scale Offline Event**
 
-### GA4 Event Planning
-- Define key events for homepage, booth interactions, and map usage.
-- Expected funnel design for navigation → booth detail → event participation.
+This project analyzes server access logs from a university festival website to understand how users interact with a time-sensitive, high-traffic service.  
+The goal was not just to visualize traffic, but to identify **high-value user segments**, **engagement patterns**, and **drop-off points** that directly inform product and UX decisions.
 
-### Server Log Analysis Plan
-- Page view clustering
-- Scroll-depth patterns
-- CTA click patterns
-- Peak-time analysis
+By combining behavioral data with event context, this analysis reveals how *momentum* is created—and lost—during short-lived but intense user journeys.
 
-Once the data is available, this repo will include:
-- Jupyter Notebooks (EDA, funnel analysis, segmentation)
-- Visualizations
-- UX improvement proposals based on results
+### Context
+- Event: University Festival (multi-day, high concurrent traffic)
+- Platform: Official festival website (mobile-first usage)
+- Role: UX/UI Designer & Data Analyst
+- Objective: Improve engagement, retention, and post-action continuity
 
----
+### Key Questions
+- Which users demonstrate the highest engagement and intent?
+- How do interaction patterns differ between casual visitors and active participants?
+- Where does user momentum peak—and why does it suddenly drop?
 
-## 📁 Repository Structure
-festival-website-case-study/
-│
-├── 01-ux-research/
-├── 02-ui-design/
-├── 03-collaboration/
-└── 04-analytics-plan/
+### Key Insights
 
+#### 1. High-Value Users Show Distinct Behavioral Patterns
+Users who participated in the **Stamp Tour (gamified feature)** recorded  
+**3.5× higher interaction rates** than general visitors.
+<p align="center"> <img src="images/page_viseted.png"></img></p>
 
----
-
-## 🚀 Next Steps
-- Add full GA4 dashboards  
-- Add server log EDA and segmentation  
-- Add final UX recommendations based on insights  
-
----
-
-# 🇰🇷 한국어 버전
-
-## 📌 프로젝트 개요
-이 레포지토리는 **중앙대학교 축제 웹사이트 프로젝트**에서  
-제가 담당한 UX 리서치, UI 디자인, 개발 협업, GA4/로그 분석 기획 과정을 정리한 케이스 스터디입니다.
-
-웹 개발은 팀에서 진행했으며,  
-저는 **UX/UI 디자이너로서 연구·디자인·협업·QA 중심으로 기여**했습니다.
-
-추후 GA4와 서버 로그 데이터를 기반으로 **데이터 기반 UX 분석을 추가할 예정**입니다.
-
----
-
-## 🧩 프로젝트 범위
-- **UX 리서치** (문제 정의, 인터뷰, 페인포인트, 흐름 개선)
-- **UI 디자인** (컴포넌트, 컬러/타이포, 반응형 기준)
-- **디자인 → 개발 핸드오프**
-- **개발 반영 UI 시각적 QA**
-- **GA4/로그 분석 기획 (진행 중)**
-
----
-
-## 🎨 UX & UI 기여 내용
-
-### 1. UX 리서치
-- 기존 축제 사이트의 문제점 파악  
-- 간단한 사용자 인터뷰 및 페인포인트 도출  
-- 내비게이션·부스·일정 등 전체 흐름 재정의  
-- 휴리스틱 평가 및 사용성 점검 수행  
-
-### 2. UI 디자인
-- Figma 기반 전체 컴포넌트 시스템 구축  
-- Home, 일정, 지도, 부스 등 핵심 페이지 디자인  
-- 데스크톱/모바일 반응형 규칙 정리  
-- 필요 시 마케팅/홍보용 시각 자료 제작  
-
----
-
-## 🤝 개발팀과의 협업
-제가 직접 코드를 작성하지는 않았지만,  
-개발팀과 밀접하게 협업하며 다음 역할을 수행했습니다:
-
-- 명확한 디자인 스펙 및 핸드오프 문서 제공  
-- 개발 반영된 UI를 점검하며 QA 진행  
-- 간격/반응형/색상 등 디자인 정렬 이슈 피드백  
-- before/after 비교 자료 정리  
-
-이 레포지토리에서 협업 과정을 확인할 수 있습니다.
-
----
-
-## 📊 분석 기획 (진행 중)
-데이터가 수집되는 대로, 아래 분석을 진행할 예정입니다.
-
-### GA4 이벤트 기획
-- 주요 사용자 이벤트 정의  
-- 내비게이션 → 부스 → 상세 보기까지의 퍼널 설계  
-
-### 서버 로그 분석 기획
-- 페이지 뷰 패턴 분석  
-- 스크롤 깊이 분석  
-- CTA 클릭 흐름  
-- 혼잡 시간대 파악  
-
-추후 포함될 예정:
-- Jupyter Notebook 기반 EDA  
-- 시각화 자료  
-- 데이터 기반 UX 개선안  
-
----
-
-## 📁 레포지토리 구조
+These users voluntarily engaged with multiple booths and features, indicating:
+- High intrinsic motivation
+- Strong alignment with festival goals
+- Potential as a “VIP segment”
 
 
----
+#### 2. The “Completion Cliff” Problem
+Despite their high engagement, Stamp users showed an **abrupt drop-off immediately after task completion**.
+<p align="center"> <img src="images/Exit_Action_by_user_type.png"></img></p>
 
-## 🚀 Next Steps
-- Add full GA4 dashboards  
-- Add server log EDA and segmentation  
-- Add final UX recommendations based on insights  
+**Finding:**  
+The interface treated *stamp completion* as the **end of the journey**, rather than a transition point.
 
----
-
-# 🇰🇷 한국어 버전
-
-## 📌 프로젝트 개요
-이 레포지토리는 **중앙대학교 축제 웹사이트 프로젝트**에서  
-제가 담당한 UX 리서치, UI 디자인, 개발 협업, GA4/로그 분석 기획 과정을 정리한 케이스 스터디입니다.
-
-웹 개발은 팀에서 진행했으며,  
-저는 **UX/UI 디자이너로서 연구·디자인·협업·QA 중심으로 기여**했습니다.
-
-추후 GA4와 서버 로그 데이터를 기반으로 **데이터 기반 UX 분석을 추가할 예정**입니다.
-
----
-
-## 🧩 프로젝트 범위
-- **UX 리서치** (문제 정의, 인터뷰, 페인포인트, 흐름 개선)
-- **UI 디자인** (컴포넌트, 컬러/타이포, 반응형 기준)
-- **디자인 → 개발 핸드오프**
-- **개발 반영 UI 시각적 QA**
-- **GA4/로그 분석 기획 (진행 중)**
-
----
-
-## 🎨 UX & UI 기여 내용
-
-### 1. UX 리서치
-- 기존 축제 사이트의 문제점 파악  
-- 간단한 사용자 인터뷰 및 페인포인트 도출  
-- 내비게이션·부스·일정 등 전체 흐름 재정의  
-- 휴리스틱 평가 및 사용성 점검 수행  
-
-### 2. UI 디자인
-- Figma 기반 전체 컴포넌트 시스템 구축  
-- Home, 일정, 지도, 부스 등 핵심 페이지 디자인  
-- 데스크톱/모바일 반응형 규칙 정리  
-- 필요 시 마케팅/홍보용 시각 자료 제작  
-
----
-
-## 🤝 개발팀과의 협업
-제가 직접 코드를 작성하지는 않았지만,  
-개발팀과 밀접하게 협업하며 다음 역할을 수행했습니다:
-
-- 명확한 디자인 스펙 및 핸드오프 문서 제공  
-- 개발 반영된 UI를 점검하며 QA 진행  
-- 간격/반응형/색상 등 디자인 정렬 이슈 피드백  
-- before/after 비교 자료 정리  
-
-이 레포지토리에서 협업 과정을 확인할 수 있습니다.
-
----
-
-## 📊 분석 기획 (진행 중)
-데이터가 수집되는 대로, 아래 분석을 진행할 예정입니다.
-
-### GA4 이벤트 기획
-- 주요 사용자 이벤트 정의  
-- 내비게이션 → 부스 → 상세 보기까지의 퍼널 설계  
-
-### 서버 로그 분석 기획
-- 페이지 뷰 패턴 분석  
-- 스크롤 깊이 분석  
-- CTA 클릭 흐름  
-- 혼잡 시간대 파악  
-
-추후 포함될 예정:
-- Jupyter Notebook 기반 EDA  
-- 시각화 자료  
-- 데이터 기반 UX 개선안  
-
----
-
-## 📁 레포지토리 구조
+**Interpretation:**  
+User momentum was built successfully—but not sustained.
 
 
----
+#### 3. Momentum Is a Design Asset
+Behavioral patterns suggest that **post-completion moments** are critical opportunities:
+- Users are most emotionally invested
+- Willing to explore additional actions
+- Highly receptive to recommendations
 
-## 🚀 다음 단계
-- GA4 대시보드 업로드  
-- 서버 로그 EDA 및 세그멘테이션 분석  
-- 데이터 기반 UX 개선안 정리  
+Failing to guide users at this moment results in lost engagement potential.
+
+### Data & Methodology
+- Data Source: Server access logs
+- Tools: Python (Pandas, NumPy), Jupyter Notebook
+- Methods:
+  - Session-based behavior grouping
+  - Interaction frequency comparison
+  - Time-sequence analysis of user actions
+- Visualization: Matplotlib / Seaborn
+
+### Design & Product Proposal
+**“Keep the Momentum” Strategy**
+
+Introduce contextual prompts immediately after stamp completion, such as:
+- Nearby food trucks
+- Popular booths
+- Limited-time events
+
+This reframes completion as a **gateway**, not a conclusion—extending user engagement beyond the original goal.
+
+
+### Why This Matters
+This project demonstrates how:
+- Log data can reveal **latent user intent**
+- UX decisions directly impact behavioral continuity
+- Short-lived services still benefit from long-term engagement thinking
+
+The findings are applicable to any event-based or campaign-driven digital service.
+
+### Tech Stack
+- Python
+- Pandas / NumPy
+- Jupyter Notebook
+- Matplotlib / Seaborn
+
 
 ---
 
 # ✨ Contact
 lucyroh529@gmail.com  
-Portfolio site (coming soon)
-
+[Portfolio site
+](https://drive.google.com/file/d/1oYXgYKXSfqMSNLQ3CQgdVcVjDctKBclb/view?usp=sharing)
 
