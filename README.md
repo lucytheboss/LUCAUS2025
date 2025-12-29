@@ -106,12 +106,12 @@ Failing to guide users at this moment results in lost engagement potential.
 
 ### Data & Methodology
 - Data Source: Server access logs
-- Tools: Python (Pandas, NumPy), Jupyter Notebook
+- Tools: `Python` (Pandas, NumPy), `Jupyter Notebook`
 - Methods:
   - Session-based behavior grouping
   - Interaction frequency comparison
   - Time-sequence analysis of user actions
-- Visualization: Matplotlib / Seaborn
+- Visualization: `Matplotlib` / `Seaborn`
 
 ### Design & Product Proposal
 **“Keep the Momentum” Strategy**
@@ -133,10 +133,10 @@ This project demonstrates how:
 The findings are applicable to any event-based or campaign-driven digital service.
 
 ### Tech Stack
-- Python
-- Pandas / NumPy
-- Jupyter Notebook
-- Matplotlib / Seaborn
+- `Python`
+- `Pandas` / `NumPy`
+- `Jupyter Notebook`
+- `Matplotlib` / `Seaborn`
 
 
 ---
